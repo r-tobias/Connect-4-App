@@ -6,15 +6,15 @@
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="style.css">
-  <script src="app.js"></script>
+  <script defer src="app.js" ></script>
   <title>Connect Four!</title>
 </head>
 <body>
 
     <h1>Connect Four</h1>
     <button class="reset">🔄</button>
-    <button class="instructions">&#10068;</button>
-    <span class="status"></span>
+    <button data-modal-target ="#modal">&#10068;</button>
+    <span class="winner"></span>
 
 <div class="game-board">
   <div class="cell row-top col-0"></div>
@@ -68,6 +68,16 @@
   <div class="cell row-5 col-6 bottom-border right-border"></div>
 </div>
 
+<div class = "modal" id ="modal">
+  <div class = "modal-header">
+    <div class = "title">Game Instructions</div>
+    <button data-close-button class = "close-button">&times</button>
 
+  </div>
+  <div class = "modal-body">
+    To win Connect Four, all you have to do is connect four of your colored checker pieces in a row, much the same as tic tac toe. This can be done horizontally, vertically or diagonally. Each player will drop in one checker piece at a time. This will give you a chance to either build your row, or stop your opponent from getting four in a row.
+</div>
+</div>
+<div id = "overlay"></div>
 </body>
 </html>
