@@ -9,7 +9,8 @@ h1 {
   color: #1843cf;
 }
 
-.instructions {
+
+.reset {
   left: 68%
 }
 
@@ -102,11 +103,11 @@ button:active {
 }
 
 .cell:not(.row-top).red.win {
-  background: red;
+  background: rgb(235, 114, 114);
 }
 
 .cell:not(.row-top).yellow.win {
-  background: yellow;
+  background: rgb(240, 240, 94);
 }
 
 .cell.row-top {
@@ -133,4 +134,64 @@ button:active {
   top: 5rem;
   display: block;
   font-size: 40px;
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 200ms ease-in-out;
+  border: 1px solid black;
+  border-radius: 10px;
+  z-index: 10;
+  background: white;
+  width: 500px;
+  max-width: 80%;
+}
+.modal.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.modal-header {
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid black;
+}
+.modal-header .title {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+.modal-header .close-button {
+  position: absolute;
+  left: 95%;
+  top: 0;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 1.25rem;
+  font-weight: bold;
+  z-index: 11;
+}
+.modal-body {
+  padding: 10px 15px;
+}
+#overlay {
+  position: fixed;
+  opacity: 0;
+  transition: 200ms ease-in-out;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  pointer-events: none;
+}
+
+#overlay.active {
+  opacity: 1;
+  pointer-events: all;
 }
