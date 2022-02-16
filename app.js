@@ -28,3 +28,30 @@ const columns = [column0, column1, column2, column3, column4, column5, column6];
 //Variables
 let liveGame = true;
 let yellowTurn = true;
+
+//Adding Event Listeners
+
+//Functions
+const getClassListArray = (cell) => {
+    const classList = cell.classList;
+    return [...classList]
+}
+
+
+//Event Handlers
+const handleCellMouseOver = (e) => {
+    const cell = e.target;
+
+    const classList = getClassListArray(cell)
+    console.log(classList)
+ 
+
+}
+
+
+for (const row of rows) {
+    for (const cell of row) {
+        cell.addEventListener('mouseover', handleCellMouseOver)
+    }
+
+}
