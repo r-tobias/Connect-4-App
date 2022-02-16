@@ -2,7 +2,7 @@
 const allCells = document.querySelectorAll('.cell:not(.row-top)');
 const topCells = document.querySelectorAll('.cell.row-top');
 const resetButton = document.querySelector('.reset');
-const statusSpan = document.querySelector('.status');
+const winnerSpan = document.querySelector('.winner');
 const HowtoButton = document.querySelector('.instructions')
 
 // rows
@@ -24,3 +24,7 @@ const column4 = [allCells[39], allCells[32], allCells[25], allCells[18], allCell
 const column5 = [allCells[40], allCells[33], allCells[26], allCells[19], allCells[12], allCells[5], topCells[5]];
 const column6 = [allCells[41], allCells[34], allCells[27], allCells[20], allCells[13], allCells[6], topCells[6]];
 const columns = [column0, column1, column2, column3, column4, column5, column6];
+
+//Variables
+let liveGame = true;
+let yellowTurn = true;
