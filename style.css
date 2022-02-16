@@ -49,7 +49,7 @@ button {
 }
 
 button:hover {
-  background-color: #1D50F1;
+  background-color: #4370F1;
 }
 
 button:active {
@@ -83,4 +83,54 @@ button:active {
   cursor: pointer;
   height: 75px;
   width: 75px;
+}
+.cell::after {
+  background: white;
+  border-radius: 50%;
+  border: 3px solid black;
+  content: '';
+  cursor: pointer;
+  height: 75px;
+  width: 75px;
+}
+
+.cell:not(.row-top).red::after {
+  background: red;
+}
+.cell:not(.row-top).yellow::after {
+  background: yellow;
+}
+
+.cell:not(.row-top).red.win {
+  background: red;
+}
+
+.cell:not(.row-top).yellow.win {
+  background: yellow;
+}
+
+.cell.row-top {
+  background: white;
+}
+
+.cell.row-top::after {
+  border: none;
+}
+
+.cell.row-top.red::after {
+  background: red;
+  border: 3px solid black;
+}
+
+.cell.row-top.yellow::after {
+  background: yellow;
+  border: 3px solid black;
+}
+
+.winner {
+  position: absolute;
+  left: 40%;
+  top: 5rem;
+  display: block;
+  font-size: 40px;
 }
