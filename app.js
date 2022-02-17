@@ -296,9 +296,6 @@ const getClassListArray = (cell) => {
     }
   };
   
-  
-  
-  
   // Adding Event Listeners
   for (const row of rows) {
     for (const cell of row) {
