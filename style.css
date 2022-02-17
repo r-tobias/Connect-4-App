@@ -134,12 +134,14 @@ button:active {
 }
 
 .winner {
+  text-transform: uppercase;
   position: absolute;
   left: 40%;
-  top: 5rem;
+  top: 10rem;
   display: block;
   font-size: 40px;
-  color: #3b3d42;
+  color: #0941ce;
+  text-shadow: rgb(0,0,0) 4px 4px 8px;
 
 }
 
