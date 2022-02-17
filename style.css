@@ -4,9 +4,24 @@
   box-sizing: border-box;
 }
 
-.reset {
-  left: 68%
+h1 {
+  font-size: 6rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Chewy', cursive;
+  color: #1843cf;
+  text-shadow: rgb(0,0,0) 7px 7px 7px;
 }
+
+.reset {
+  top: 3rem;
+  left: 90%
+}
+.instructions {
+  top: 7rem;
+  left: 90%
+}
+
 
 body {
   align-items: center;
@@ -16,11 +31,6 @@ body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   padding: 25px;
   width: 100%;
-}
-h1 {
-  text-transform: uppercase;
-  color: #1843cf;
-  
 }
 button {
     top: 0.5rem;
