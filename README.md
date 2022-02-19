@@ -19,4 +19,4 @@ Run index.html file in a modern browser. No additional installation necessary.
 * Input players' names
 
 ## Game Link
-https://jolly-bhabha-b2ca09.netlify.app
+https://connect-4-app.netlify.app/
